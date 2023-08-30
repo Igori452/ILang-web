@@ -1,0 +1,1532 @@
+@import url(fonts.css);
+
+html {
+    background-color: #000;
+    overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+   
+  /* Скрываем scrollbar для IE, Edge и Firefox */
+  body {
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .container {
+    max-width: 2200px;
+    padding: 0px 140px;
+    margin: 0 auto;
+}
+
+/* ========================================== HEADER ========================================== */
+
+header {
+    padding: 50px 0px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 100;
+    transition: all 0.3s linear;
+}
+
+.header-animation {
+    background-color: #000;
+    box-shadow: 0px 2px 10px rgba(155, 155, 155, 0.2);
+    padding: 25px 0px;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    display: block;
+    color: #FFF;
+    font-family: "Inter-Bold";
+    font-size: 45px;
+    letter-spacing: 5.7px;
+    user-select: none;
+}
+
+.logo-show {
+    opacity: 1;
+    transition: all 0.3s ease-out;
+}
+
+.animation-logo {
+    opacity: 0;
+}
+
+.i-span-logo {
+    color: #0085FF;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+    display: block;
+    transition: all 0.5s ease-out;
+}
+
+.animation-icon-logo {
+    position: relative;
+    left: 0px;
+}
+
+nav ul {
+    color: #FFF;
+    font-family: "Inter-Bold";
+    font-size: 18px;
+    display: flex;
+}
+
+nav ul a {
+    transition: color 0.4s;
+}
+
+nav ul a:hover{
+    color: #0085FF;
+}
+
+nav ul li + li {
+    margin-left: 70px;
+}
+
+.button-block-nav {
+    color: #FFF;
+    display: flex;
+}
+
+.button {
+    width: 210px;
+    height: 60px;
+    border-radius: 25px;
+    border: 3px solid #0085FF;
+    margin-left: 25px;
+    color:#FFF;
+    font-family: "Inter-Bold";
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+
+.sig-in {
+    background-color: #0085FF;
+    border: 0;
+    margin: 0;
+    width: 140px;
+}
+
+.sig-in:hover {
+    background-color: #1862A7;
+}
+
+.reg:hover {
+    background-color: rgba(24, 98, 167, 0.2);
+}
+
+.nav-button{
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-nav {
+    display: none;
+}
+
+.line-hamburger {
+    width: 100%;
+    height: 3px;
+    background-color: #0085FF;
+    border-radius: 25px;
+}
+
+.animation-nav {
+    opacity: 0;
+    transition: all 0.4s ease-in;
+}
+
+.animation-opacity-1 {
+    opacity: 1;
+}
+
+/* ========================================== SECTION 1 ========================================== */
+
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+}
+
+.section-1-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-section-1 {
+    width: 40%;
+    height: 650px;
+    background: url("../img/background.png");
+    background-size: 100% 100%;
+}
+
+.logo-block {
+    width: 40%;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-text {
+    color: #C8E2FC;
+    font-family: "DelaGothicOne-Regular";
+    font-size: 100px;
+    letter-spacing: 15px;
+}
+
+.logo-description {
+    font-family: "NunitoSans_10pt-Regular";
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    display: block;
+}
+
+.logo-button {
+    margin-top: 40px;
+    width: 400px;
+    height: 100px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 26px;
+    border-radius: 50px;
+    background: linear-gradient(180deg, #1298c1 0%, #b13bc9 100%);
+    background-size: cover;
+    font-family: "Inter-Bold";
+}
+
+.texture-button {
+    border-radius: 50px;
+    width: 100%;
+    height: 100%;
+    background: url("../img/texture-button.png"), lightgray 50% / cover no-repeat;
+    background-size: cover;
+    mix-blend-mode: luminosity;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 3px 0px #FFF;
+    transition: box-shadow 0.4s 0.0s;
+}
+
+.texture-button:hover {
+    mix-blend-mode: hard-light;
+    box-shadow: 0px 0px 0px 3px #FFF;
+}
+
+.mg-bootom-logo {
+    margin-bottom: 60px;
+}
+
+/* ========================================== SECTION 2 ========================================== */
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.content-section {
+    width: 100%;
+    height: 800px;
+}
+
+.name-page {
+    text-align: center;
+    color: #FFF;
+    font-family: "Inter-Light";
+    font-size: 100px;
+    letter-spacing: 20px;
+    opacity: 0.6;
+}
+
+.bluer-line {
+    width: 100%;
+    height: 2px;
+    position: relative;
+    top: -1px;
+    background: #000;
+    box-shadow: 0px 0px 60px 90px #000;
+}
+
+.main-description-website {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-description {
+    color: #FFF;
+    font-family: "NunitoSans_10pt-Light";
+    font-size: 32px;
+    width: 80%;
+    line-height: 2;
+    text-align: center;
+}
+
+.best-block {
+    width: 100%;
+    padding: 200px 0px;
+    background: url("../img/background-best.png");
+    background-size: cover;
+}
+
+.best-ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.best-ul ul {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.best-ul ul a {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    margin: 30px 30px;
+    transition: transform 0.4s;
+}
+
+.best-ul ul a:hover {
+    transform: scale(1.05);
+}
+
+.text-best {
+    color: #FFF;
+    font-family: "NunitoSans_10pt-SemiBold";
+    font-size: 16px;
+    width: 40%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.img-best {
+    width: 60%;
+    height: 100%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.color-best-1 {
+    background: #3B9263;
+}
+
+.color-best-2 {
+    background: #923B3B;
+}
+
+.color-best-3 {
+    background: #3B6392;
+}
+
+.color-best-4 {
+    background: #90923B;
+}
+
+
+.path-img-1 {
+    background: url("../img/img-best-1.png");
+    background-size: cover;
+}
+
+.path-img-2 {
+    background: url("../img/img-best-2.png");
+    background-size: cover;
+}
+
+.path-img-3 {
+    background: url("../img/img-best-3.png");
+    background-size: cover;
+}
+
+.path-img-4 {
+    background: url("../img/img-best-4.png");
+    background-size: cover;
+}
+
+/* ========================================== SECTION 3 ========================================== */
+
+.section-3 {
+    width: 100%;
+}
+
+.margine-bottom-name {
+    margin-bottom: 170px;
+}
+
+.margine-top-name {
+    margin-top: 170px;
+}
+
+.courses 
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.courses ul{
+    max-width: 1380px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.courses ul li {
+    width: 45%;
+    height: 235px;
+    background: #1C1719;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    transition: bottom 0.4s, left 0.4s;
+}
+
+.courses ul li:hover {
+    bottom: 5px;
+    left: 5px;
+}
+
+.background-li {
+    width: 100%;
+    height: 100%;
+    background: url("../img/background-li.png");
+    mix-blend-mode: lighten;
+    background-size: cover;
+    font-family: "Inter-Light";
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #FFF
+}
+
+.text-li-course {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.language {
+    font-family: "Inter-Regular";
+    font-size: 55px;
+    letter-spacing: 10px;
+    width: 50%;
+}
+
+.description {
+    font-size: 18px;
+    width: 50%;
+    line-height: 30px;
+}
+
+.text-bottom {
+    font-size: 15px;
+}
+
+.color-1 { color: #D35E5E; }
+
+.color-2 { color: #5EB7D3; }
+
+.color-3 { color: #7D5ED3; }
+
+.color-4 { color: #D3C85E; }
+
+.color-5 { color: #5E7FD3; }
+
+.color-6 { color: #5ED394; }
+
+.button-add {
+    margin: 60px 0px;
+    width: 260px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: "NunitoSans_10pt-Light";
+    font-size: 26px;
+    letter-spacing: 2.04px;
+    border-radius: 30px;
+    border: 3px solid #818181;
+    transition: background-color 0.4s;
+    user-select: none;
+}
+
+.button-add:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ========================================== SECTION 4 ========================================== */
+
+.section-4  {
+    width: 100%;    
+}
+
+.section-4-content {
+    background-image: url("../img/backgrpund-participation.png");
+    background-size: 100% 100%;
+    width: 100%;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.text-section-left {
+    color: #FFF;
+    width: 35%;
+    height: 100%;
+    font-size: 32px;
+    font-family: "Inter-Light";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.0;
+}
+
+.form-section {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+
+.email-platform {
+    color: #FFF;
+    font-size: 23px;
+    font-family: "Inter-SemiBold";
+    background: #999999;
+    width: 70%;
+    height: 70px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.padding-form-field {
+    padding-left: 30px;
+}
+
+.form-section-4 {
+    width: 70%;
+}
+
+.name-and-surname {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-in-form-section-4 {
+    width: 49%;
+    height: 70px;
+    background: #999999;
+    color: #FFF;
+    font-family: "Inter-Light";
+    font-size: 20px;
+    border-radius: 30px;
+    outline: 0;
+}
+
+.margine-top-in-form {
+    margin-top: 45px;
+}
+
+.input-in-form-section-4::placeholder {
+    color: #FFF;
+    font-family: "Inter-Light";
+    font-size: 20px;
+}
+
+.input-in-form-section-4:focus{
+   background: #848484;
+}
+
+.message-size {
+    height: 200px;
+    width: 100%;
+    font-size: 16px;
+    padding: 20px 30px;
+    resize: none;
+}
+
+.button-send {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-send input {
+    width: 290px;
+    height: 70px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: "Inter-Light";
+    color: #FFF;
+    background-color: #354961;
+    border-radius: 30px;
+    transition: background-color 0.4s;
+}
+
+.button-send input:hover {
+    background-color: #263446;
+}
+
+/* ========================================== FOOTER ========================================== */
+
+footer {
+    width: 100%;
+    height: 450px;
+    background: #383838;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100%;
+    height: 90%;
+    font-family: "Inter-Bold";
+    font-size: 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content a {
+    color: #FFF;
+    transition: color 0.4s;
+}
+
+.footer-content a:hover {
+    color: #a9d3ea;
+}
+
+.footer-content a:hover img {
+    transform: rotate(-20deg);
+}
+
+.footer-content li + li {
+    margin-top: 40px;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    transition: transform 0.4s;
+}
+
+.web-link li a{
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #000;
+    background: #D9D9D9;
+    font-family: "Inter-Bold";
+    user-select: none;
+}
+
+/* ========================================== MEDIA SCREEN 1920 and 1400 ========================================== */
+
+@media (max-width: 1920px) and (min-width: 1400px) { 
+    .img-section-1 {
+        height: 450px
+    }
+    
+    .button {
+        height: 52px;
+        width: 140px;
+        border-radius: 20px;
+        font-size: 16px;
+    }
+
+    .sig-in {
+        width: 120px;
+    }
+
+    nav ul {
+        font-size: 16px;
+    }
+
+    .logo img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo-nav {
+        font-size: 36px;
+    }
+
+    .logo-text {
+        font-size: 76px;
+    }
+
+    .logo-description {
+       font-size: 25px; 
+    }
+
+    .logo-button {
+        width: 350px;
+        height: 85px;
+        font-size: 24px;
+    }
+
+    .mg-bootom-logo {
+        margin-bottom: 40px;
+    }
+
+    .name-page {
+        font-size: 90px;
+    }
+
+    .content-section {
+        height: 670px;
+    }
+
+    .text-description {
+        font-size: 25px;
+    }
+
+    .margine-top-name {
+        margin-top: 100px
+    }   
+
+    .courses ul li {
+        height: 230px
+    }
+
+    .language {
+        font-size: 48px;
+        letter-spacing: 8px;
+    }
+
+    .description {
+        font-size: 15px;
+    }
+    
+    .text-bottom {
+        font-size: 13px;
+    }
+
+    .button-add {
+        width: 220px;
+        height: 66px;
+        font-size: 24px;
+    }
+
+    .section-4-content {
+        padding-top: 220px;
+        padding-bottom: 120px;
+    }
+
+    .text-section-left {
+        font-size: 24px;
+    }
+
+    .email-platform {
+        width: 76%;
+    }
+
+    .form-section-4 {
+        width: 76%;
+    }
+
+    .button-send input {
+        width: 240px;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    .footer-content {
+        font-size: 18px;
+    }
+
+    .footer-content img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .author {
+        font-size: 14px;
+    }
+}
+
+/* ========================================== MEDIA SCREEN 1920 and 1600 ========================================== */
+
+@media (max-width: 1920px) and (min-width: 1600px) { 
+    .img-section-1 {
+        height: 560px
+    }
+}
+
+/* ========================================== MEDIA SCREEN 1399 and 1100 ========================================== */
+
+@media (max-width: 1399px) and (min-width: 1100px) { 
+    .img-section-1 {
+        height: 330px
+    }
+    
+    .button {
+        height: 45px;
+        width: 140px;
+        border-radius: 20px;
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .sig-in {
+        width: 100px;
+    }
+
+    nav ul {
+        font-size: 14px;
+    }
+
+    nav ul li + li{
+        margin-left: 55px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo-nav {
+        font-size: 30px;
+    }
+
+    .logo-text {
+        font-size: 54px;
+    }
+
+    .logo-description {
+       font-size: 18px; 
+    }
+
+    .logo-button {
+        width: 300px;
+        height: 75px;
+        font-size: 20px;
+    }
+
+    .mg-bootom-logo {
+        margin-bottom: 30px;
+    }
+
+    .name-page {
+        font-size: 75px;
+    }
+
+    .content-section {
+        height: 490px;
+    }
+
+    .text-description {
+        font-size: 19px;
+        line-height: 40px;
+    }
+
+    .best-ul ul a {
+        width: 350px;
+        height: 220px;
+    }
+
+    .text-best {
+        font-size: 14px;
+    }
+
+    .margine-top-name {
+        margin-top: 100px
+    }   
+
+    .courses ul li {
+        height: 200px;
+    }
+
+    .language {
+        font-size: 35px;
+        letter-spacing: 3px;
+    }
+
+    .description {
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .text-bottom {
+        font-size: 8px;
+    }
+
+    .button-add {
+        width: 200px;
+        height: 60px;
+        font-size: 21px;
+    }
+
+    .section-4-content {
+        padding-top: 200px;
+        padding-bottom: 120px;
+    }
+
+    .text-section-left {
+        font-size: 19px;
+    }
+
+    .email-platform {
+        width: 85%;
+        height: 60px;
+    }
+
+    .form-section-4 {
+        width: 85%;
+    }
+
+    .input-in-form-section-4 {
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .input-in-form-section-4::placeholder {
+        font-size: 17px;
+    }
+
+    .button-send input {
+        width: 240px;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .message-size {
+        height: 170px;
+    }
+
+    footer {
+        height: 350px;
+    }
+
+    .footer-content {
+        font-size: 16px;
+    }
+
+    .footer-content img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .author {
+        font-size: 14px;
+    }
+}
+
+/* ========================================== MEDIA SCREEN 1099 and 0 ========================================== */
+
+@media (max-width: 1099px) and (min-width: 0px) { 
+    .img-section-1 {
+       display: none;
+    }
+
+    .logo-block {
+        width: 100%;
+        align-items: center;
+    }
+    
+    .button {
+        display: none;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo-nav {
+        font-size: 24px;
+    }
+
+    .logo-text {
+        font-size: 85px;
+    }
+
+    .logo-description {
+       text-align: center;
+       font-size: 22px; 
+    }
+
+    .logo-button {
+        width: 330px;
+        height: 85px;
+        font-size: 23px;
+    }
+
+    .mg-bootom-logo {
+        margin-bottom: 60px;
+    }
+
+    .name-page {
+        font-size: 80px;
+    }
+
+    .content-section {
+        height: 490px;
+    }
+
+    .text-description {
+        width: 100%;
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .best-ul ul a {
+        width: 350px;
+        height: 220px;
+    }
+
+    .text-best {
+        font-size: 14px;
+    }
+
+    .margine-top-name {
+        margin-top: 100px
+    }   
+
+    .background-li {
+        padding: 20px 25px;
+    }
+
+    .courses ul li {
+        height: 170px;
+        width: 100%;
+    }
+
+    .courses ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language {
+        font-size: 40px;
+        letter-spacing: 5px;
+    }
+
+    .description {
+        font-size: 13px;
+        line-height: 25px;
+    }
+
+    .text-bottom {
+        font-size: 10px;
+    }
+
+    .button-add {
+        width: 200px;
+        height: 60px;
+        font-size: 21px;
+    }
+
+    .section-4-content {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section-left {
+        font-size: 23px;
+        width: 95%;
+        padding-bottom: 100px;
+    }
+
+    .email-platform {
+        width: 85%;
+        height: 60px;
+    }
+
+    .form-section {
+        width: 100%;
+        align-items: center;
+    }
+
+    .form-section-4 {
+        width: 85%;
+    }
+
+    .input-in-form-section-4 {
+        width: 48%;
+        height: 60px;
+        font-size: 17px;
+    }
+
+    .input-in-form-section-4::placeholder {
+        font-size: 17px;
+    }
+
+    .button-send input {
+        width: 240px;
+        height: 60px;
+        font-size: 22px;
+    }
+
+    .message-size {
+        width: 100%;
+        height: 170px;
+    }
+
+    footer {
+        height: 350px;
+    }
+
+    .footer-content {
+        font-size: 16px;
+    }
+
+    .footer-content img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .author {
+        font-size: 14px;
+    }
+
+    .delay-anim-1 { transition-delay: 0s !important; }
+
+    .delay-anim-2 { transition-delay: 0s !important; }
+
+    .delay-anim-3 { transition-delay: 0s !important; }
+
+    .delay-anim-4 { transition-delay: 0s !important; }
+
+    .description-text-left-in-section-4-animation {
+        left: 0px !important;
+        top: 20px; 
+    }
+}
+
+/* ========================================== MEDIA SCREEN 799 and 500 ========================================== */
+
+@media (max-width: 799px) and (min-width: 500px) { 
+    .logo-text {
+        font-size: 75px;
+    }
+
+    .logo-description {
+        font-size: 20px;
+    }
+
+    .logo-button {
+        width: 300px;
+        height: 80px;
+        font-size: 21px;
+    }
+
+    .mg-bootom-logo {
+        margin-bottom: 45px;
+    }
+
+    .text-description {
+        font-size: 16px;
+    }
+
+    .best-ul ul a {
+        width: 330px;
+    }
+
+    .button-add {
+        width: 170px;
+        height: 55px;
+        font-size: 19px;
+        border-radius: 20px;
+        margin: 40px 0px;
+    }
+
+    .name-page {
+        font-size: 70px;
+        letter-spacing: 15px;
+    }
+
+    .form-section-4 {
+        width: 100%;
+    }
+
+    .email-platform {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .text-section-left {
+        font-size: 19px;
+        width: 100%;
+    }
+    
+    .container{
+        padding: 0px 40px;
+    }
+
+    .section-4-content {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .button-send input {
+        width: 200px;
+        height: 55px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+
+    .footer-content {
+        font-size: 14px;
+    }
+
+    .footer-content img {
+        width: 25px;
+        height: 25px;
+        margin-right: 15px;
+    }
+
+    .author {
+        font-size: 12px;
+        height: 40px;
+    }
+
+    footer {
+        height: 300px;
+    }
+}
+
+/* ========================================== MEDIA SCREEN 499 and 0 ========================================== */
+
+@media (max-width: 499px) and (min-width: 0px) { 
+    .logo-nav {
+        font-size: 20px;
+    }
+
+    .logo img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .hamburger-nav { 
+        height: 30px;
+        width: 30px;
+    }
+
+    .logo-text {
+        font-size: 50px;
+    }
+
+    .logo-description {
+        font-size: 15px;
+    }
+
+    .logo-button {
+        width: 250px;
+        height: 60px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+
+    .main-description-website {
+        align-items: end;
+        height: 40%;
+    }
+
+    .mg-bootom-logo {
+        margin-bottom: 30px;
+    }
+
+    .text-description {
+        font-size: 11px;
+        line-height: 23px;
+    }
+
+    .best-ul ul a {
+        width: 290px;
+        height: 200px;
+        margin: 20px 0px
+    }
+
+    .text-best {
+        font-size: 12px;
+        border-bottom-left-radius: 35px;
+        border-top-left-radius: 35px;
+    }
+
+    .img-best {
+        border-bottom-right-radius: 35px;
+        border-top-right-radius: 35px;
+    }
+
+    .courses ul li {
+        height: 145px;
+        border-radius: 20px
+    }
+
+    .background-li {
+        padding: 20px 20px;
+    }
+
+    .language {
+        font-size: 26px;
+    }
+
+    .description {
+        font-size: 10px;
+        line-height: 16px;
+    }
+
+    .text-bottom {
+        font-size: 8px;
+    }
+
+    .button-add {
+        width: 140px;
+        height: 45px;
+        font-size: 15px;
+        border-radius: 20px;
+        margin-top: 40px;
+        margin-bottom: 110px;
+    }
+
+    .name-page {
+        font-size: 45px;
+        letter-spacing: 12px;
+    }
+
+    .margine-top-name {
+        margin-top: 0px;
+    }
+
+    .margine-bottom-name {
+        margin-bottom: 90px;
+    }
+
+    .form-section-4 {
+        width: 100%;
+    }
+
+    .email-platform {
+        width: 100%;
+        font-size: 15px;
+        height: 50px;
+        border-radius: 15px;
+    }
+
+    .input-in-form-section-4 {
+        height: 50px;
+        border-radius: 15px;
+        font-size: 13px;
+    }
+
+    .input-in-form-section-4::placeholder {
+        font-size: 13px;
+    }
+
+    .padding-form-field {
+        padding-left: 15px;
+    }
+
+    .message-size {
+        height: 160px;
+        padding: 10px 15px;
+    }
+
+    .text-section-left {
+        font-size: 14px;
+        width: 100%;
+        padding-bottom: 60px;
+    }
+    
+    .container{
+        padding: 0px 10px;
+    }
+
+    .margine-top-in-form {
+        margin-top: 25px;
+    }
+
+    .section-4-content {
+        padding-top: 100px;
+        padding-bottom: 0px;
+    }
+
+    .button-send input {
+        width: 170px;
+        height: 45px;
+        font-size: 16px;
+        border-radius: 15px;
+    }
+
+    .footer-content {
+        font-size: 13px;
+    }
+
+    .footer-content img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .author {
+        font-size: 11px;
+        height: 35px;
+    }
+
+    footer {
+        margin-top: 100px;
+        height: 260px;
+    }
+
+    .footer-content li + li {
+        margin-top: 30px;
+    }
+}
+
+/* ========================================== ANIMATION JS ========================================== */
+
+.element-animation {
+    position: relative;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+}
+
+.element-show {
+    opacity: 1;
+    left: 0px !important;
+    bottom: 0px !important;
+    right: 0px !important;
+    top: 0px !important;
+}
+
+.position-anim-img {
+    left: -30px;
+}
+
+.position-anim-logo-nav {
+    transition-duration: 0.4s;
+    top: -30px;
+}
+
+.position-anim-logo {
+    top: -20px;
+}
+
+.delay-1 {
+    transition-delay: 0.2s;
+}
+
+.delay-2 {
+    transition-delay: 0.4s;
+}
+
+.delay-3 {
+    transition-delay: 0.6s;
+}
+
+.name-animation {
+    transition-delay: 0.2;
+    top: 20px;
+}
+
+.name-opacity {
+    opacity: 0.6;
+}
+
+.description-animation {
+    transition-delay: 0.2s;
+    transition-duration: 0.5s;
+    top: 30px;
+}
+
+.description-text-left-in-section-4-animation {
+    left: -30px;
+}
+
+.delay-anim-1 { transition-delay: 0.1s; }
+
+.delay-anim-2 { transition-delay: 0.25s; }
+
+.delay-anim-3 { transition-delay: 0.4s; }
+
+.delay-anim-4 { transition-delay: 0.55s; }
+
+.left-footer-animated { left: -20px; }
+
+.right-footer-animated { left: 20px; }
