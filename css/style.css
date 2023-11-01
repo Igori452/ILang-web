@@ -37,6 +37,10 @@ html {
     visibility: hidden !important;
 }
 
+.animation-opacity-1 {
+    opacity: 1 !important;
+}
+
 /* ========================================== HEADER ========================================== */
 
 header {
