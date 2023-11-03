@@ -22,7 +22,6 @@ function logoAnimationShow() {
 
 //header and logo
 window.onload = function() {
-  AOS.init();
   if (getBodyScrollTop() > 0)  {
       const header = document.querySelector('header');
       header.classList.add('header-animation'), logoAnimationClear(); 

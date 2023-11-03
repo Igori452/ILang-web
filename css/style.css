@@ -225,7 +225,7 @@ nav ul li + li {
 }
 
 .color-registration {
-    color: #000;
+    color: #000 !important;
 }
 
 .color-small-logo {
@@ -416,11 +416,18 @@ nav ul li + li {
     contain: content;
 }
 
+.best-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .best-block {
     width: 100%;
     padding: 200px 0px;
     background: url("../img/background-best.png");
-    background-size: cover;
+    background-size: 100% 100%;
+    background-position: 50% 50%;
 }
 
 .best-ul {
@@ -432,7 +439,7 @@ nav ul li + li {
 }
 
 .best-ul ul {
-    max-width: 100%;
+    max-width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -440,8 +447,8 @@ nav ul li + li {
 }
 
 .best-ul ul a {
-    width: 400px;
-    height: 250px;
+    width: 440px;
+    height: 280px;
     display: flex;
     margin: 30px 30px;
     transition: transform 0.4s;
@@ -631,7 +638,7 @@ nav ul li + li {
 }
 
 .section-4-content {
-    background-image: url("../img/backgrpund-participation.png");
+    background: url("../img/backgrpund-participation.png");
     background-size: 100% 100%;
     width: 100%;
     padding-top: 300px;
@@ -698,6 +705,10 @@ nav ul li + li {
     font-size: 20px;
     border-radius: 30px;
     outline: 0;
+}
+
+.input-in-form-section-4::-webkit-scrollbar {
+    width: 0;
 }
 
 .margine-top-in-form {
@@ -954,6 +965,11 @@ footer {
 /* ========================================== MEDIA SCREEN 1399 and 1100 ========================================== */
 
 @media (max-width: 1399px) and (min-width: 1100px) { 
+    nav .logo img {
+        height: 30px;
+        width: 30px
+    }
+
     .img-section-1 {
         height: 330px
     }
@@ -1114,6 +1130,11 @@ footer {
 
 @media (max-width: 1099px) and (min-width: 0px) { 
     header .button { display: none; }
+
+    nav .logo img {
+        height: 20px;
+        width: 19px;
+    }
     
     .button {
         height: 34px;
@@ -1144,8 +1165,8 @@ footer {
     .hamburger-nav {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 35px;
+        justify-content: space-between;
+        height: 25px;
         width: 35px;
     }
 
@@ -1281,6 +1302,7 @@ footer {
         width: 240px;
         height: 60px;
         font-size: 22px;
+        border-radius: 20px;
     }
 
     .message-size {
@@ -1341,7 +1363,7 @@ footer {
     }
 
     .text-description {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .best-ul ul a {
@@ -1453,8 +1475,8 @@ footer {
     }
 
     .text-description {
-        font-size: 11px;
-        line-height: 23px;
+        font-size: 15px;
+        line-height: 25px;
     }
 
     .best-ul ul a {
